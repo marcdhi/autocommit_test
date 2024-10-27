@@ -11,9 +11,8 @@
 
 | Task                                                        | Difficulty |
 | ----------------------------------------------------------- |------------|
-| [Example Task](#task-id-example-task)                       | Medium     |
-| [Emojify](#task-id-emojify)                                 |Easy/Medium |
-| [Linkhub](#task-id-linkhub)                                 | Easy       |
+| [Example Task](#task-id-example-task)                    | Medium     |
+| [Emojify](#task-id-emojify)                            | Easy/Medium     |
 
 
 ## Task ID: Example Task
@@ -101,52 +100,47 @@ Output: "🐶 😃"
 3. Consider using libraries or frameworks like React, Vue.js, or plain HTML/CSS/JavaScript for building the interface.
 4. Allow flexibility in how emojis are displayed and edited, making the user experience more enjoyable.
 
+## Task ID: Competitive Programming Portal
+#### `Mobile Application, Web Application, APIs`
 
-## Task ID: Linkhub
+Mentors: [Abhishek Satpathy](https://github.com/AbhishekSatpathy4848) ([+91 7619503901](https://wa.me/917619503901)), [Aman Sheoran](https://github.com/amansheoran15) ([+91 8930460660](https://wa.me/918930460660))
 
-#### `Web Application`
-
-Mentors: [Apoorva Agrawal](https://github.com/imApoorva36) ([+91 8197404580](https://wa.me/8197404580)), [Mardav Gandhi](https://github.com/marcdhi) ([+91 9033398366](https://wa.me/9033398366))
-
-Difficulty: `Easy`
+Difficulty: `Medium`
 
 ### Description
 
-Develop a web application called LinkHub that helps NITK students create personalized landing pages to organize and share important academic, club, and social links. This tool can be used for various purposes like sharing links for group projects, showcasing club activities, organizing research work, or preparing for placements. Each student will have their own customizable landing page where they can organize their links efficiently.
+Develop a mobile or web application that displays a unified dashboard for Competitive Programming Platforms, aggregating user information and contest data from at least three platforms (e.g., Codeforces, LeetCode, AtCoder). The app should offer users a comprehensive overview of their competitive programming profile across these platforms.
+
 
 Follow the steps below to complete this challenge:
 
-1. Build a clean, minimal user interface where users can add, edit, and delete links
-3. Allow students to customize the appearance of their landing page, including themes and NITK-branded backgrounds (e.g., college colors, logos)
-4. Enable students to categorize their links (e.g., Projects, Clubs, Research, Social Media) and assign custom titles to each link
-5. Ensure that the links open in a new tab when clicked
-
-Bonus Feature ( Optional ):
-
-1. Each student's page should have a custom shareable URL, for example, `<your_domain>.vercel.app/username` or `<your_domain>.netlify.app/username`, making it easy to share with others
-2. Searchable Links: Implement a search feature that allows students or visitors to quickly find specific links on the landing page.
-
-### Expected Input and Output Examples:
-
-`Input: User provides links (e.g., Instagram, LinkedIn, personal website) and customizes their page's appearance.`
-
-Output: "A personalized landing page with clickable links that can be shared with others."
-
+1. Integrate user data(username, rating, etc) from at least three competitive programming platforms of your choice.
+2. Showcase contest information across different platforms for:
+   - Past Contests: Show recently concluded contests with relevant details.
+   - Ongoing Contests: Display currently active contests.
+   - Upcoming Contests: List future scheduled contests with dates and times.
+3. User's can tap on contests to view more information.
+4. Design and implement a clean, intuitive user interface for easy navigation between different pages. Great UI/UX will add bonus points.
+5. Allow the user to filter contest information by platform.
+6. Use appropriate APIs to fetch up-to-date contest information.
+7. Implement error handling for API failures or data unavailability.
+8. Ensure the application is fully responsive and functions well on both desktop and mobile devices.
+9. Implement a backend service to handle API requests and data processing.
+10. Allow the user to add upcoming contests to his calendar.
+11. Feel free to add any extra information from the platforms(heatmap, recent problem submissions, etc). These extra features would add bonus points.
+    
 ### Useful resources:
 
-- [HTML and CSS Basics](https://www.w3schools.com/html/)
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Github Pages](https://docs.github.com/en/pages)
-- [Vercel documentation](https://vercel.com/docs)
-- [Netlify documentation](https://docs.netlify.com/)
+- [Codeforces API](https://codeforces.com/apiHelp)
+- [AtCoder API](https://atcoder-api-python.readthedocs.io/en/latest)
+- [ReactJS](https://react.dev/)
+- [NodeJS](https://nodejs.org/en)
+- [Flutter](https://flutter.dev/)
+- [React Native](https://reactnative.dev/)
 
 ### Tips
 
-1. Focus on Usability: Since the app is for students, prioritize a simple and intuitive UI where adding and managing links is effortless.
-2. Responsive Design: Ensure that the page looks good on mobile, as many users will view it on their smartphones.
-3. Styling Libraries: Consider using CSS libraries like Bootstrap or Tailwind CSS to speed up development and make the UI more visually appealing.
-4. Local Storage: Implement local storage so users can save their links and page settings locally if authentication is not part of the scope.
-5. Custom Slugs: Use URL slugs (<your_domain>.vercel.app/username) to make the page unique and easy to share.
-<!-- add more here -->
-
-
+1. Any Mobile App Developement Technology can be used, either Native or Cross-Platform.
+2. Start by exploring the different platform APIs and the information they deliver.
+3. In case you find platforms that don't provide API endpoints for contests, display other information available.
+4. You can also use Unofficial Platform APIs, if official alternaties don't exist.
