@@ -9,6 +9,7 @@
 
 ### Table of contents
 
+
 | Tasks                                                               | Difficulty  |
 | ------------------------------------------------------------------- | ----------- |
 | [Emojify](#task-id-emojify)                                         | Easy/Medium |
@@ -18,12 +19,12 @@
 | [TravelTribe](#task-id-traveltribe) | Medium/Hard     |
 | [LinkHub](#task-id-linkhub)                                 | Easy/Medium      |
 | [Discord QuizBot](#task-id-discord-quizbot)            | Medium     |
+| [Club Recruitment Portal](#task-id-club-recruitment-portal)            | Hard     |
 
 
 | InterSIG Tasks                                                      | Difficulty  |
 | ------------------------------------------------------------------- | ----------- |
-| [AgriVerify (GDGxSystems)](#task-id-agriverify)                                   | Medium/Hard |
-| [Hogwarts Q&A (GDGxIntel)](#task-id-hogwarts)                  | Hard     | 
+| [AgriVerify](#task-id-agriverify)                                   | Medium/Hard |
 
 
 
@@ -81,75 +82,6 @@ Output: "🐶 😃"
 2. Make the UI fun and interactive with features like live emoji preview as the user types.
 3. Consider using libraries or frameworks like React, Vue.js, or plain HTML/CSS/JavaScript for building the interface.
 4. Allow flexibility in how emojis are displayed and edited, making the user experience more enjoyable.
-
----
-
-## Task ID: Hogwarts Q&A  
-#### `Natural Language Processing`, `Generative AI`, `Retrieval-Augmented Generation`
-
-Mentors: [Aryan Kashyap N](https://github.com/05kashyap) ([+91 8123279065](https://wa.me/918050030224)), [Fahim Ahmed](https://github.com/ahmedfahim21) ([+91 8861054452](https://wa.me/918861054452))
-
-**Difficulty**: `Hard`
-
-### Description  
-Create a **RAG (Retrieval-Augmented Generation)** system that answers questions using the book **"Harry Potter and the Prisoner of Azkaban"** as the primary knowledge base. This system should be able to handle queries related to characters, spells, locations, and magical events, retrieving contextually accurate information and generating lore-true responses.
-
-Participants will leverage this text to build a structured index for retrieval, generate embeddings, and deploy a Harry Potter-themed Q&A system. For added fun, include context references and quotes in the generated answers.
-
-You can access the full text of the book from the following link:  
-**[Harry Potter and the Prisoner of Azkaban PDF](https://ia902903.us.archive.org/12/items/FantasyFictionebookcollection/Harry%20Potter/3%20-%20Harry%20Potter%20and%20the%20Prisoner%20of%20Azkaban.pdf)**.
-
-### **Steps to Complete the Challenge**:
-
-1. **Data Collection & Ingestion**:  
-   Download the book from the provided link and parse it into a machine-readable format. Make sure to structure the data, preserving the chapters and significant sections. You may want to split the text based on chapters, events, or specific scenes.
-
-2. **Data Chunking & Preprocessing**:  
-   Break down large paragraphs into smaller chunks of 100-150 words. Ensure that each chunk contains coherent, self-contained information.
-
-3. **Embedding Generation**:  
-   - Use a pre-trained embedding model like ``all-MiniLM-L6-v2`` from Sentence Transformers to convert each text chunk into dense vector representations.
-   - The embeddings should capture semantic meaning, making it easy to retrieve the most contextually relevant text.
-
-4. **Vector Database Integration**:  
-   Store the embeddings in a vector database such as `ChromaDB`, `FAISS`, or `Milvus` for efficient similarity searches and quick lookups.
-
-5. **Query Handling & Retrieval**:  
-   - Implement a query pipeline using the embedding model to process user queries.
-   - Convert the query into an embedding and use the vector database to find the `top N` most relevant text chunks.
-
-6. **Contextual Response Generation**:  
-   - Use the retrieved chunks with a generative language model (like `Gemini` or `LLaMA`) to create a coherent response that incorporates quotes and references to specific parts of the book.
-   - Ensure that the generated output maintains the tone and style of the Harry Potter universe.
-
-7. **Serve via FastAPI**:  
-   - Expose your RAG system through **FastAPI** endpoints. 
-The /query endpoint should accept user queries like *“What is the significance of the Marauder’s Map?”* or *“How does Sirius Black escape from Hogwarts?”* and return a contextually accurate and engaging answer. 
-The endpoint should:
-Accept `POST` requests with a `JSON` body containing the user's question.
-Process the query through your RAG pipeline.
-Return a `JSON` response with the answer, relevant quotes, and metadata
-   
-8. **Develop an Interface**:  
-   - Build a responsive web interface using a frontend framework like React. It should have a chat-like interface for asking questions and receiving answers. 
-
-Bonus Feature ( Optional ):
-
-1. **Time-Turner**:  
-   - Create a "Time-Turner" feature that allows users to view the conversation history and jump back to previous points in the chat.
-   - You can store the previous conversations in the local storage.
-
-### **Useful Resources**:
-- **[Harry Potter and the Prisoner of Azkaban PDF](https://ia902903.us.archive.org/12/items/FantasyFictionebookcollection/Harry%20Potter/3%20-%20Harry%20Potter%20and%20the%20Prisoner%20of%20Azkaban.pdf)**  
-- **[LangChain Documentation](https://python.langchain.com/docs/introduction/)**
-- **[LlamaIndex Documentation](https://docs.llamaindex.ai/en/stable/)**
-- **[FastAPI Docs](https://fastapi.tiangolo.com/)**
-- **[Sentence Transformers for Embeddings](https://huggingface.co/sentence-transformers)**
-- **[ChromaDB GitHub](https://github.com/chroma-core/chroma)**
-
-### Tips:
-1. When chunking the text, experiment with different chunk sizes and overlaps to find the optimal balance between context preservation and retrieval quality.
-2. Consider adding metadata tags (chapter names, etc.) to the chunks at the time of preprocessing, this can help with retrieval.
 
 ---
 
@@ -283,7 +215,6 @@ Include the following features:
 2. For leaderboards, use a simple database to store results and calculate rankings.
 3. For the graph, use Chart.js to visualize typing speed over time.
 
----
 
 ## Task ID: Discord QuizBot
 
@@ -491,3 +422,58 @@ _Implementing the bonus features will make the task count as `Hard`, otherwise i
 8. Then after things are decided by the group members update the itinerary to the google calendars of all group members.
 9. Work on the expense management feature in case of the groups.
 
+
+## Task ID: Club Recruitment Portal
+
+#### `Full stack web development`, `Frontend`, `Backend`, `RBAC`
+
+Mentors: [Sanjeev Holla S](https://github.com/sanjeevholla26) ([+91 7676977619](https://wa.me/7676977619)), [Fahim Ahmed](https://github.com/ahmedfahim21) ([+91 8861054452](https://wa.me/8861054452))
+
+Difficulty: `Hard`
+
+### Description
+
+Develop a web application that streamlines the entire NITK clubs recruitment process, from announcing recruitment schedules to revealing the final selected candidates, ensuring a hassle-free experience for both clubs and participating students.
+
+## Features to Implement:
+
+1. **Club Registration**: Club convenors should be able to register their clubs on the platform and add necessary details.
+
+2. **Student Announcements**: Students should be able to view a list of clubs along with announcements regarding recruitment schedules.
+
+3. **Club/SIG Preference Form**: NITK Admin can release a club preference form during exclusive club recruitment, allowing students to fill out their preferences. 
+In other cases, Club Conveners can create a SIG preference form.
+
+4. **Recruitment Details**: Clubs should be able to input details about their recruitment process, including the schedule and test links (if applicable).
+
+5. **Student Registration**: Students should be able to register for the recruitment process of multiple clubs.
+
+6. **Recruitment Rounds**: Clubs should be able to manage and track students across multiple rounds in the recruitment process.
+
+7. **Final Announcements**: Clubs should be able to announce their final selected candidates at the end of the recruitment process and export as Excel/PDF.
+
+## Bonus Feature (Optional):
+
+1. **Integrated Calendar**: To manage the hectic nature of club recruitment, integrate a calendar feature where students can view the recruitment schedules of all clubs.
+2. **Club Core Members**: Give view access of your club details and registration list to other core members of the club, these members can only be added by Club Conveners.
+
+### Useful resources:
+
+- [Fullstack roadmap](https://www.guvi.in/blog/full-stack-developer-roadmap/)
+- [Django](https://docs.djangoproject.com/en/4.0/intro/tutorial01/)
+- [NodeJS](https://nodejs.org/en)
+- [Intro to RBAC](https://medium.com/@atarax/a-comprehensive-guide-on-role-based-access-control-rbac-introduction-part-1-a3a654b0e1c8)
+
+### Tips
+
+1. Start by deciding a subset of features:
+   Begin by selecting a subset of the features mentioned above that you want to implement first. This will help you build an MVP (Minimum Viable Product) and then gradually add more features.
+
+2. Design an efficient database schema:
+   Create a well-thought-out database schema that efficiently organizes data for clubs, students, recruitment rounds, announcements, and schedules.
+
+3. Choose suitable frameworks:
+   You can choose to use a full-stack framework like Django or Ruby on Rails to simplify the development of both the backend and frontend. Alternatively, you can use React/Next.js for the frontend and create APIs to connect to the backend services.
+
+4. Implement proper role-based access control (RBAC):
+   Ensure that the platform remains secure by implementing proper role-based access. Define roles like NITK Admin, Club Convenor, and Student, ensuring that each role has the necessary permissions to perform actions on the platform.
