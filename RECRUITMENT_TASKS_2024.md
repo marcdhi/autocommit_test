@@ -9,12 +9,11 @@
 
 ### Table of contents
 
-| Task                                                        | Difficulty |
-| ----------------------------------------------------------- |------------|
-| [Example Task](#task-id-example-task)                    | Medium     |
-| [Emojify](#task-id-emojify)                            | Easy/Medium     |
-| [Competitive Programming Portal](#task-id-competitive-programming-portal) | Medium     |
-
+| Task                                                                | Difficulty  |
+| ------------------------------------------------------------------- | ----------- |
+| [Example Task](#task-id-example-task)                               | Medium      |
+| [Emojify](#task-id-emojify)                                         | Easy/Medium |
+| [Web-Based Diagram Generator](#task-id-web-based-diagram-generator) | Medium      |
 
 ## Task ID: Example Task
 
@@ -46,7 +45,6 @@ Follow the steps below to complete this challenge:
 2. Use pre-trained models and APIs to accelerate development
 3. Pay attention to the user experience and make interactions feel natural
 
-
 ## Task ID: Emojify
 
 #### `Web Application`, `Natural Language Processing`
@@ -72,6 +70,7 @@ Follow the steps below to complete this challenge:
 Bonus Feature ( Optional ):
 
 _Implementing the bonus feature will make the task count as `Medium`, otherwise it will be `Easy`_
+
 1. Emoji Sentiment Analysis having an implementation of sentiment analysis using simple NLP models (like VADER or TextBlob) to adjust emoji suggestions based on the emotional tone of the text. This can help ensure the emoji translation better reflects the mood of the original message
 
 ### Expected Input and Output Examples:
@@ -101,48 +100,44 @@ Output: "🐶 😃"
 3. Consider using libraries or frameworks like React, Vue.js, or plain HTML/CSS/JavaScript for building the interface.
 4. Allow flexibility in how emojis are displayed and edited, making the user experience more enjoyable.
 
-## Task ID: Competitive Programming Portal
-#### `Mobile Application, APIs`
+## Task ID: Web-Based Diagram Generator
 
-Mentors: [Abhishek Satpathy](https://github.com/AbhishekSatpathy4848) ([+91 7619503901](https://wa.me/917619503901)), [Aman Sheoran](https://github.com/amansheoran15) ([+91 8930460660](https://wa.me/918930460660))
+#### `Full-Stack Development`, `Diagram Generation`, `Graphviz`
+
+Mentors: [Shubham Subodh Rasal](https://github.com/Shubham-Rasal) ([+91 7349784770](https://wa.me/917349784770)), [Udit Jain](https://github.com/UditJain2622004) ([+91 8708596606](https://wa.me/918708596606))
 
 Difficulty: `Medium`
 
 ### Description
 
-Develop a mobile application that displays a unified dashboard for Competitive Programming Platforms, aggregating user information, ratings, questions solved, contest data etc from at least three platforms (e.g., Codeforces, LeetCode, AtCoder). The app should offer users a comprehensive overview of their competitive programming profile across these platforms.
+Develop a web application inspired by _Mermaid.js_ that enables users to generate various types of diagrams based on user input. Users can enter data or upload relevant files, and the system will produce the desired diagram. Focus on letting users generate diagrams with minimal input. The application should also provide the option to export the generated diagram in popular formats like PNG and PDF.
 
+#### Popular Diagrams:
 
-Follow the steps below to complete this challenge:
+- Flowcharts
+- ER Diagrams
+- Class Diagrams
+- Dependency Diagrams (for Node.js and React projects)
 
-1. Integrate user information like username, rating and other relevant information from at least three platforms of your choice.
-2. If contests are available, show contest information for:
-   - Past Contests: Show recently concluded contests with relevant details.
-   - Ongoing Contests: Display currently active contests.
-   - Upcoming Contests: List future scheduled contests with dates and times.
-3. User's can tap on contests to view more information if available.
-4. Design and implement a clean, intuitive user interface for easy navigation between different pages. Great UI/UX will add bonus points.
-5. Allow the user to filter contest information by platform.
-6. Use appropriate APIs to fetch up-to-date contest information.
-7. Implement error handling for API failures or data unavailability.
-8. You can choose to implement a backend service to handle API requests and data processing.
-9. Allow the user to add upcoming contests to his calendar.
-10. Feel free to add any extra information from these platforms (heatmap, recent problem submissions, number of solved questions, difficulty of questions solved etc). Adding extra information would add bonus points.
-    
-### Useful resources:
+#### Steps:
 
-- [Codeforces API](https://codeforces.com/apiHelp)
-- [AtCoder API](https://atcoder-api-python.readthedocs.io/en/latest)
-- [Unoffical Leetcode API](https://github.com/alfaarghya/alfa-leetcode-api)
-- [NodeJS](https://nodejs.org/en)
-- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
-- [Flutter](https://flutter.dev/)
-- [React Native](https://reactnative.dev/)
+1. **Input Mechanism**: Design a simple input system that is intuitive and allows for diagram creation, whether through form-based inputs or file uploads.
+2. **Diagram Generation**:
+   - Implement support for creating diagram using **Graphviz** or **D3.js**.
+   - For Dependency Diagrams for Node.js/React projects, allow users to upload a zip file of the project. The tool should parse the project’s dependencies and visualize the relationship between files and external packages.
+3. **Export Functionality**: Provide an option for users to export their diagrams in popular formats like PNG or PDF.
+
+### Useful Resources:
+
+- [Graphviz](https://graphviz.org)
+- [D3.js](https://d3js.org/)
+- [Mermaid.js Documentation](https://mermaid.js.org/)
+- [Dependency Graphs in Software Projects](https://docs.npmjs.com/cli/v6/commands/npm-ls)
 
 ### Tips
 
-1. Any Mobile App Developement Technology can be used, either Native or Cross-Platform.
-2. Start by exploring the different platform APIs and the information they deliver.
-3. Then look into ways you can process and surface available information throught clean UI/UX.
-3. In case you find platforms that don't provide API endpoints for contests, display other information available.
-4. You can also use Unofficial Platform APIs, if official alternatives don't exist.
+1. Build support for different types of diagrams one by one.
+2. Use project analysis tools like npm, yarn, or Webpack to generate dependency graphs for Node.js and React projects. These tools can help map out the project structure automatically.
+3. Leverage libraries like Graphviz or D3.js for creating clean and user-friendly visualizations. These libraries are flexible and can handle a wide range of diagram types.
+4. Focus on the user experience by ensuring that users can generate diagrams with the least amount of manual effort. Implement features like pre-filled options where possible.
+<!-- add more here -->
