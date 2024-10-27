@@ -11,10 +11,9 @@
 
 | Task                                                        | Difficulty |
 | ----------------------------------------------------------- |------------|
-| [Example Task](#task-id-example-task)                    | Medium     |
-| [Emojify](#task-id-emojify)                            | Easy/Medium     |
-| [Fast-Type](#task-id-fast-type)                        | Medium          |  
-| [Discord QuizBot](#task-id-discord-quizbot)            | Medium     |
+| [Example Task](#task-id-example-task)                       | Medium     |
+| [Emojify](#task-id-emojify)                                 |Easy/Medium |
+| [Linkhub](#task-id-linkhub)                                 | Easy       |
 
 
 ## Task ID: Example Task
@@ -46,7 +45,6 @@ Follow the steps below to complete this challenge:
 1. Start by focusing on a specific domain or set of tasks for your assistant
 2. Use pre-trained models and APIs to accelerate development
 3. Pay attention to the user experience and make interactions feel natural
-
 
 
 ## Task ID: Emojify
@@ -103,85 +101,52 @@ Output: "🐶 😃"
 3. Consider using libraries or frameworks like React, Vue.js, or plain HTML/CSS/JavaScript for building the interface.
 4. Allow flexibility in how emojis are displayed and edited, making the user experience more enjoyable.
 
-<!-- add more here -->
-### Task ID: Fast-Type
 
-#### `Web Development`,`Frontend`,`Backend`,`WebSockets`
+## Task ID: Linkhub
 
-Mentors: [Aahil Rafiq](https://github.com/AahilRafiq) ([+91 7975657621](https://wa.me/917975657621)), [Shree Harsha Bhat](https://github.com/mshreeharsha) ([+91 9739835034](https://wa.me/919739835034))
+#### `Web Application`
 
-Difficulty: `Medium`
+Mentors: [Apoorva Agrawal](https://github.com/imApoorva36) ([+91 8197404580](https://wa.me/8197404580)), [Mardav Gandhi](https://github.com/marcdhi) ([+91 9033398366](https://wa.me/9033398366))
+
+Difficulty: `Easy`
 
 ### Description
 
-Build a typing speed test app like [Monkeytype](https://monkeytype.com/). The app should let users take a typing test based on either time (e.g., 60 seconds) or a fixed number of words (e.g., 50 words).
+Develop a web application called LinkHub that helps NITK students create personalized landing pages to organize and share important academic, club, and social links. This tool can be used for various purposes like sharing links for group projects, showcasing club activities, organizing research work, or preparing for placements. Each student will have their own customizable landing page where they can organize their links efficiently.
 
-Include the following features:
+Follow the steps below to complete this challenge:
 
-1. Show the typing speed (words per minute) and accuracy after the test.
-2. Provide analytics on the user's typing:
-   - Speed and accuracy stats
-   - A graph showing how typing speed changes over time during the test
-3. Create a daily leaderboard and an all-time leaderboard to display the top typers.
-4. See that frontend provides a good user experience, including real-time updating of letters typed , correct marking of letters and good looking UI.
-5. **Bonus:** Show how a user's typing speed improves over time.
-6. **Bonus:** Add a multiplayer mode where users can race with 5 random people online.
+1. Build a clean, minimal user interface where users can add, edit, and delete links
+3. Allow students to customize the appearance of their landing page, including themes and NITK-branded backgrounds (e.g., college colors, logos)
+4. Enable students to categorize their links (e.g., Projects, Clubs, Research, Social Media) and assign custom titles to each link
+5. Ensure that the links open in a new tab when clicked
+
+Bonus Feature ( Optional ):
+
+1. Each student's page should have a custom shareable URL, for example, `<your_domain>.vercel.app/username` or `<your_domain>.netlify.app/username`, making it easy to share with others
+2. Searchable Links: Implement a search feature that allows students or visitors to quickly find specific links on the landing page.
+
+### Expected Input and Output Examples:
+
+`Input: User provides links (e.g., Instagram, LinkedIn, personal website) and customizes their page's appearance.`
+
+Output: "A personalized landing page with clickable links that can be shared with others."
 
 ### Useful resources:
 
-- [Chart.js](https://www.chartjs.org/)
-- [SpeedTypingOnline (How to calculate WPM and accuracy)](https://www.speedtypingonline.com/typing-equations)
-- [Socket.io](https://socket.io/)
+- [HTML and CSS Basics](https://www.w3schools.com/html/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Github Pages](https://docs.github.com/en/pages)
+- [Vercel documentation](https://vercel.com/docs)
+- [Netlify documentation](https://docs.netlify.com/)
 
 ### Tips
 
-1. Start with a basic typing test that records speed and accuracy.
-2. For leaderboards, use a simple database to store results and calculate rankings.
-3. For the graph, use Chart.js to visualize typing speed over time.
+1. Focus on Usability: Since the app is for students, prioritize a simple and intuitive UI where adding and managing links is effortless.
+2. Responsive Design: Ensure that the page looks good on mobile, as many users will view it on their smartphones.
+3. Styling Libraries: Consider using CSS libraries like Bootstrap or Tailwind CSS to speed up development and make the UI more visually appealing.
+4. Local Storage: Implement local storage so users can save their links and page settings locally if authentication is not part of the scope.
+5. Custom Slugs: Use URL slugs (<your_domain>.vercel.app/username) to make the page unique and easy to share.
+<!-- add more here -->
 
-
-## Task ID: Discord QuizBot
-
-#### `Discord Bot`, `APIs`,`Full Stack Development`, `GenAI`
-
-Mentors: [Anush Revankar ](https://github.com/anushrevankar24) ([+91 9482597386](https://wa.me/9482597386)), [Ayush Kumar Singh](https://github.com/Ayush4345) ([+91 9334352548](https://wa.me/9334352548))
-
-Discord is a popular communication platform used for communities, and Discord bots can automate tasks within these servers, enhancing server functionality. In this task, you are expected to build a Discord quiz bot that allows users to select from a set of 10-20 available quizzes, answer timed questions, and view their results on a leaderboard ranked by both points and time taken. In cases where multiple users have the same points, the ranking should be determined based on the time taken per question. After completing a quiz, users should be able to view the top 10 players and their overall rank.
-
-The task also includes building a CRUD (Create, Read, Update, Delete) application for managing quiz sets and individual questions.
-
-**Key Features to Implement**:
-  1) **Discord Quiz Bot** :
-        - The bot should display 10-20 available quizzes for users to choose from, with each quiz consisting of multiple-choice questions.
-        - Once a quiz is selected, the bot presents each question one by one, with a set timer (e.g., 30 seconds per question). The bot will track the time users take 
-         to answer each question
-        - After the quiz, display a leaderboard ranking players.The leaderboard should display users ranked by their points (total number of correct answers). If 
-          multiple users have the same points, the ranking should be decided based on time taken per question (faster users rank higher). 
-        - The leaderboard should show the top 10 players and the user’s rank, even if they are not in the top 10.
-       
-  2)  **Quiz Management application**:
-      - Create a web-based CRUD application (Create, Read, Update, Delete) to manage quiz sets and individual questions.
-      - Through this panel, authorized admins can create quiz sets (e.g., 10 questions per set), update quiz sets or individual questions, and delete existing sets 
-         or questions. Admins can also view all quiz sets and questions.
-      - The CRUD application will be connected to the same database that the Discord quiz bot uses, ensuring real-time synchronization of changes made in the admin 
-        panel with the questions displayed to users during quizzes.
-
-### Bonus Features:
-1. Enhance the quiz management application by integrating  Large Language Models (LLMs) through APIs like OpenAI (ChatGPT) or Gemini to generate quiz question sets. This feature allows admins or question setters to specify the number of questions needed (e.g., 10 questions per quiz), and the AI should generate that number of questions.The generated questions should be editable, allowing admins to review and modify any of the AI-generated questions before finalizing the quiz set.
-2. Deploy the Discord Quizbot on a cloud platform (e.g., Heroku, AWS, or Vercel) so it can run continuously and be accessible to users.
-
-### Useful resources:
-- [Build a Discord Bot With Python](https://betterprogramming.pub/coding-a-discord-bot-with-python-64da9d6cade7)
-- [Build a Discord Quiz Bot](https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37)
-- [Gemini API](https://ai.google.dev/)
-- [Supabase](https://supabase.com/)
-- [Building a CRUD App with Supabase and Express](https://medium.com/@heshramsis/building-a-crud-app-with-supabase-and-express-a-step-by-step-guide-for-junior-developers-81456b850910)
-- [MongoDB](https://www.mongodb.com/) or [PostgreSQL](https://www.postgresql.org/)
-  
-### Tips
-1. Use any language, technology, or framework of your choice to build the bot and backend.
-2. Start with quiz selection, timing, and leaderboard display before adding extra features.
-3. Use Gemini API for integrating LLMs for making questions ,as its API is free to use.
-4. Ensure intuitive commands, similar to MEE6, and add slash commands for easy interaction.
-5. Any useful additional/interesting feature will have bonus points.
 
