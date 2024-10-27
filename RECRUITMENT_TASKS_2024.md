@@ -9,12 +9,17 @@
 
 ### Table of contents
 
-| Task                                                        | Difficulty |
-| ----------------------------------------------------------- |------------|
-| [Emojify](#task-id-emojify)                            | Easy/Medium     |
+| Tasks                                                               | Difficulty  |
+| ------------------------------------------------------------------- | ----------- |
+| [Emojify](#task-id-emojify)                                         | Easy/Medium |
 | [Web-Based Diagram Generator](#task-id-web-based-diagram-generator) | Medium      |
 | [Fast-Type](#task-id-fast-type)                                     | Medium      |
-| [Competitive Programming Portal](#task-id-competitive-programming-portal) | Medium     |
+
+
+| InterSIG Tasks                                                      | Difficulty  |
+| ------------------------------------------------------------------- | ----------- |
+| [AgriVerify](#task-id-agriverify)                                   | Medium/Hard |
+
 
 ## Task ID: Emojify
 
@@ -155,49 +160,61 @@ Include the following features:
 
 ---
 
-## Task ID: Competitive Programming Portal
+## Task ID: AgriVerify
 
-#### `Mobile Application, APIs`
+#### `Web Application`, `Blockchain`, `Smart Contracts`
 
-Mentors: [Abhishek Satpathy](https://github.com/AbhishekSatpathy4848) ([+91 7619503901](https://wa.me/917619503901)), [Aman Sheoran](https://github.com/amansheoran15) ([+91 8930460660](https://wa.me/918930460660))
+Mentors: [Krishna Tulsyan](https://github.com/krishna) ([+91 9506221135](https://wa.me/9506221135)), [Apoorva Agrawal](https://github.com/imApoorva36) ([+91 8197404580](https://wa.me/8197404580)), [Mardav Gandhi](https://github.com/marcdhi) ([+91 9033398366](https://wa.me/9033398366))
 
-Difficulty: `Medium`
+Difficulty: `Medium/Hard`
 
 ### Description
 
-Develop a mobile application that displays a unified dashboard for Competitive Programming Platforms, aggregating user information, ratings, questions solved, contest data etc from at least three platforms (e.g., Codeforces, LeetCode, AtCoder). The app should offer users a comprehensive overview of their competitive programming profile across these platforms.
+**AgriVerify**, where you'll blend blockchain technology with organic farming to bring trust and transparency to every crop grown! In this task, you’ll be creating a decentralized platform that empowers farmers to easily certify their organic produce and generate QR codes that consumers can scan for instant verification.
+
+Imagine walking through a market, scanning a QR code on an apple, and instantly seeing its certification, the farm it came from, and the people behind it—all with the power of blockchain!
+
+---
+
+### Steps to Complete the Challenge:
+
+1. **Farmer Onboarding:**  
+   Build a welcoming system where farmers can easily sign up using wallet authentication and request certification for their crops. The process should be seamless, ensuring the user experience is as simple as organic farming itself.
+
+2. **Certification Process:**  
+   Dive into smart contracts! Implement a contract where farmers submit their crops for certification. For simplicity, assume the certifications are auto-approved. The goal is transparency and accessibility.
+
+3. **QR Code Generation:**  
+   Generate QR codes for certified crops. These codes should link to a beautifully simple page showing the certification details stored on the blockchain, enabling consumers to instantly trust their food.
+
+---
+
+### Bonus Task:
+
+**Note**: Attempting this section will consider your submission as a `hard task`.
+
+**Push Notifications:**  
+Add an extra touch by integrating **[Push Protocol](https://push.org/)** to notify farmers in real-time when their crops are certified. Keep them excited and informed with instant updates!
+
+---
+**Note**: You can team up with others to complete this task, but remember, the interview will be conducted individually.
 
 
-Follow the steps below to complete this challenge:
+### Useful Resources:
+- [Hardhat Documentation](https://hardhat.org/getting-started/)
+- [QR Code Generation with JavaScript](https://www.npmjs.com/package/qrcode)
+- [Push Protocol Guide](https://push.org/docs/notifications/)
+- [Push Protocol Tutorials](https://push.org/docs/notifications/tutorials/)
+- [OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/#) - Easily create custom ERC20 and ERC721 contracts
+- [Solidity by Example](https://solidity-by-example.org/) - Learn Solidity with simple, practical examples
+- [Web3.js Tutorial for Beginners](https://www.dappuniversity.com/articles/web3-js-intro) - Interact with smart contracts from the frontend
+- [How to Build a Blockchain App with Ethereum](https://www.dappuniversity.com/articles/blockchain-app-tutorial) - Step-by-step tutorial on creating a dApp
 
-1. Integrate user information like username, rating and other relevant information from at least three platforms of your choice.
-2. If contests are available, show contest information for:
-   - Past Contests: Show recently concluded contests with relevant details.
-   - Ongoing Contests: Display currently active contests.
-   - Upcoming Contests: List future scheduled contests with dates and times.
-3. User's can tap on contests to view more information if available.
-4. Design and implement a clean, intuitive user interface for easy navigation between different pages. Great UI/UX will add bonus points.
-5. Allow the user to filter contest information by platform.
-6. Use appropriate APIs to fetch up-to-date contest information.
-7. Implement error handling for API failures or data unavailability.
-8. You can choose to implement a backend service to handle API requests and data processing.
-9. Allow the user to add upcoming contests to his calendar.
-10. Feel free to add any extra information from these platforms (heatmap, recent problem submissions, number of solved questions, difficulty of questions solved etc). Adding extra information would add bonus points.
-    
-### Useful resources:
+---
 
-- [Codeforces API](https://codeforces.com/apiHelp)
-- [AtCoder API](https://atcoder-api-python.readthedocs.io/en/latest)
-- [Unoffical Leetcode API](https://github.com/alfaarghya/alfa-leetcode-api)
-- [NodeJS](https://nodejs.org/en)
-- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
-- [Flutter](https://flutter.dev/)
-- [React Native](https://reactnative.dev/)
+### Tips:
+- Focus on creating an easy-to-use platform where farmers feel confident certifying their crops.
+- Use smart contract libraries like **OpenZeppelin** to ensure security and accelerate development.
+- Keep the frontend user-friendly, ensuring a fun and smooth experience for both farmers and consumers.
 
-### Tips
-
-1. Any Mobile App Developement Technology can be used, either Native or Cross-Platform.
-2. Start by exploring the different platform APIs and the information they deliver.
-3. Then look into ways you can process and surface available information throught clean UI/UX.
-3. In case you find platforms that don't provide API endpoints for contests, display other information available.
-4. You can also use Unofficial Platform APIs, if official alternatives don't exist.
+---
